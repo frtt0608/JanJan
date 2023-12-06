@@ -1,0 +1,30 @@
+
+server:
+  port: 9090
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/obiz
+    username: root
+    password: new1234!
+  jpa:
+    hibernate:
+      ddl-auto: create-drop # 스키마 자동생성
+#    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        default_batch_fetch_size: 100
+
+  # mongoDB
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+#      authentication-database:
+#      database:
+#      username:
+#      password:
+
